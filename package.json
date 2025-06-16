@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "obsidian-random-wikipedia",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "This is a plugin for Obsidian that generates a note for a random Wikipedia article. (https://github.com/SpencerF718/obsidian-random-wikipedia)",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",

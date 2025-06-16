@@ -4,8 +4,8 @@
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Generates a note for a random Wikipedia article.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
-	"isDesktopOnly": false
+	"author": "SpencerF718",
+	"authorUrl": "https://github.com/SpencerF718",
+	"fundingUrl": "",
+	"isDesktopOnly": true
 }
