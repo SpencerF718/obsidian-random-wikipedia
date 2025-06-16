@@ -4,6 +4,8 @@ A plugin for [Obsidian](https://obsidian.md/) that fetches a random Wikipedia ar
 
 The purpose of this plugin is to encourage daily note-taking and learning.
 
+To generate a random article, click on the dice ribbon on the top left in Obsidian.
+
 ## Features
 
 - Random Article Fetching
