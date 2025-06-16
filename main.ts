@@ -1,4 +1,4 @@
-import {App, Notice, Plugin, PluginSettingTab, Setting, TFile } from 'obsidian'; 
+import {App, Notice, Plugin, PluginSettingTab, Setting, TFile, normalizePath } from 'obsidian'; 
 
 interface RandomWikipediaArticleSettings {
 	minHeaders: number;
@@ -38,7 +38,7 @@ export default class RandomWikipediaArticlePlugin extends Plugin {
 
 					let fullPath = fileName;
 					if (this.settings.noteFolder) {
-						const cleanedFolder = this.settings.noteFolder.replace(/^\/|\/$/g, '');
+						const cleanedFolder = normalizePath(this.settings.noteFolder);
 						fullPath = `${cleanedFolder}/${fileName}`;
 
 						const folderExists = await this.app.vault.adapter.exists(cleanedFolder);
