@@ -71,8 +71,8 @@ export default class RandomWikipediaArticlePlugin extends Plugin {
 		};
 
 		this.addCommand({
-			id: 'insert-random-wikipedia-article',
-			name: 'Insert Random Wikipedia Article',
+			id: 'insert-random-article',
+			name: 'Insert Random Article',
 			callback: handleInsertArticle
 		});
 
@@ -294,7 +294,7 @@ class RandomWikipediaArticleSettingTab extends PluginSettingTab {
 						await this.plugin.saveSettings();
 					});
                 text.inputEl.rows = 5;
-                text.inputEl.style.width = '100%';
+                text.inputEl.addClass('random-wikipedia-disallowed-headers-textarea');
 			});
 
 		new Setting(containerEl)
