@@ -72,11 +72,11 @@ export default class RandomWikipediaArticlePlugin extends Plugin {
 
 		this.addCommand({
 			id: 'insert-random-article',
-			name: 'Insert Random Article',
+			name: 'Insert random article',
 			callback: handleInsertArticle
 		});
 
-		const ribbonIconEl = this.addRibbonIcon('dice', 'Insert Random Wikipedia Article', async (evt: MouseEvent) => {
+		const ribbonIconEl = this.addRibbonIcon('dice', 'Insert random Wikipedia article', async (evt: MouseEvent) => {
 			handleInsertArticle();
 		});
 
@@ -256,10 +256,8 @@ class RandomWikipediaArticleSettingTab extends PluginSettingTab {
 
 		containerEl.empty();
 
-		containerEl.createEl('h2', {text: 'Random Wikipedia Article Plugin Settings'});
-
 		new Setting(containerEl)
-			.setName('Minimum Headers')
+			.setName('Minimum headers')
 			.setDesc('Minimum number of main section headers an article must have to be considered suitable. Articles with fewer headers will be skipped.')
 			.addText(text => text
 				.setPlaceholder('e.g., 5')
@@ -271,7 +269,7 @@ class RandomWikipediaArticleSettingTab extends PluginSettingTab {
 				}));
 
 		new Setting(containerEl)
-			.setName('Maximum Retries')
+			.setName('Maximum retries')
 			.setDesc('Maximum number of attempts to find a suitable article before giving up. Increase for more perseverance, decrease to fail faster.')
 			.addText(text => text
 				.setPlaceholder('e.g., 15')
@@ -283,7 +281,7 @@ class RandomWikipediaArticleSettingTab extends PluginSettingTab {
 				}));
 
 		new Setting(containerEl)
-			.setName('Disallowed Headers')
+			.setName('Disallowed headers')
 			.setDesc('Comma-separated list of section titles to exclude from the generated notes (case-insensitive).')
 			.addTextArea(text => {
 				text
@@ -298,7 +296,7 @@ class RandomWikipediaArticleSettingTab extends PluginSettingTab {
 			});
 
 		new Setting(containerEl)
-			.setName('Note Folder')
+			.setName('Note folder')
 			.setDesc('Specify a folder where new Wikipedia notes will be saved (e.g., "Wikipedia/Articles" or leave empty for vault root). The folder will be created if it does not exist.')
 			.addText(text => text
 				.setPlaceholder('e.g., Wikipedia/Articles')

@@ -1,6 +1,6 @@
 {
 	"name": "random-wikipedia-article",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "This is a plugin for Obsidian that generates a note for a random Wikipedia article. (https://github.com/SpencerF718/obsidian-random-wikipedia)",
 	"main": "main.js",
 	"scripts": {

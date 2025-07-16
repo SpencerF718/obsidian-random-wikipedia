@@ -1,7 +1,7 @@
 {
 	"id": "random-wikipedia-article",
 	"name": "Random Wikipedia Article",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minAppVersion": "0.15.0",
 	"description": "Generates a note for a random Wikipedia article.",
 	"author": "SpencerF718",
